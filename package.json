@@ -1,0 +1,38 @@
+{
+  "name": "tibetan-word-tokenizer",
+  "version": "1.0.0",
+  "description": "A JavaScript port of Botok - Tibetan word tokenizer with Sanskrit detection",
+  "main": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./trie": "./src/trie.js",
+    "./tokenizer": "./src/tokenizer.js",
+    "./chunks": "./src/chunks.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "build-data": "node scripts/build-dictionary.js"
+  },
+  "keywords": [
+    "tibetan",
+    "tokenizer",
+    "nlp",
+    "word-segmentation",
+    "botok",
+    "sanskrit"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/tibetan-word-tokenizer"
+  },
+  "files": [
+    "src/",
+    "data/"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
