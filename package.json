@@ -1,36 +1,42 @@
 {
   "name": "tibetan-word-tokenizer",
   "version": "1.0.0",
-  "description": "A JavaScript port of Botok - Tibetan word tokenizer with Sanskrit detection",
+  "description": "A JavaScript port of OpenPecha's Botok: Tibetan word tokenizer with Sanskrit detection",
+  "keywords": [
+    "tibetan",
+    "tokenizer",
+    "botok",
+    "nlp",
+    "word-segmentation",
+    "sanskrit"
+  ],
+  "author": "Jérémy Frère (https://frerejeremy.me)",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/jerefrer/tibetan-word-tokenizer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerefrer/tibetan-word-tokenizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jerefrer/tibetan-word-tokenizer/issues"
+  },
   "main": "src/index.js",
   "type": "module",
   "exports": {
     ".": "./src/index.js",
     "./trie": "./src/trie.js",
     "./tokenizer": "./src/tokenizer.js",
-    "./chunks": "./src/chunks.js"
+    "./chunks": "./src/chunks.js",
+    "./data/dictionary.json": "./data/dictionary.json"
   },
   "scripts": {
     "test": "node --test test/*.test.js",
     "build-data": "node scripts/build-dictionary.js"
   },
-  "keywords": [
-    "tibetan",
-    "tokenizer",
-    "nlp",
-    "word-segmentation",
-    "botok",
-    "sanskrit"
-  ],
-  "author": "",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/your-username/tibetan-word-tokenizer"
-  },
   "files": [
     "src/",
-    "data/"
+    "data/dictionary.json",
+    "NOTICE"
   ],
   "engines": {
     "node": ">=18.0.0"
