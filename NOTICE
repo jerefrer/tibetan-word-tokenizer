@@ -1,0 +1,20 @@
+tibetan-word-tokenizer
+Copyright 2026 Jérémy Frère
+
+This product is a JavaScript port of Botok, the Tibetan word tokenizer
+developed by OpenPecha (formerly Esukhia).
+
+  Botok
+  Copyright (C) 2019-2025 OpenPecha
+  https://github.com/OpenPecha/Botok
+  Licensed under the Apache License, Version 2.0
+
+The tokenization algorithm, the character and chunk handling, the trie
+structure and the Sanskrit syllable detection in src/ are translated from the
+Python source of Botok. Changes made by this port: the code was rewritten in
+JavaScript (ES modules) and the API was adapted to JavaScript conventions.
+
+The bundled dictionary in data/ was generated from the "general" dialect pack
+of botok-data (https://github.com/Esukhia/botok-data), the word lists
+maintained by Esukhia / OpenPecha for use with Botok. botok-data does not
+declare a licence of its own; see README.md.
