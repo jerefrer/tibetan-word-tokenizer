@@ -1,6 +1,6 @@
 {
   "name": "tibetan-word-tokenizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript port of OpenPecha's Botok: Tibetan word tokenizer with Sanskrit detection",
   "keywords": [
     "tibetan",
