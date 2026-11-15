@@ -2,7 +2,8 @@
  * tibetan-word-tokenizer
  *
  * A JavaScript port of Botok - Tibetan word tokenizer with Sanskrit detection
- * https://github.com/Esukhia/botok
+ * https://github.com/OpenPecha/Botok
+ * Copyright (C) 2019-2025 OpenPecha, Apache-2.0 (see NOTICE)
  */
 
 export * from './constants.js';
